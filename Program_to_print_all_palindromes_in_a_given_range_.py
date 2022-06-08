@@ -1,0 +1,12 @@
+n=int(input())
+m=int(input())
+for i in range(n,m+1):
+  rev=0
+  temp=i
+  while i>0:
+   d=i%10
+   rev=rev*10+d
+   i=i//10
+  if rev==temp:
+     print(temp,end=' ')
+  temp=0

@@ -1,14 +1,15 @@
+def prime(n):
+    c=0
+    for i in range(1,n+1):
+        if(n%i==0):
+            c+=1
+    if(c==2):
+        return 1
+    else:
+        return 0
 a=int(input())
 b=int(input())
-n=a+b
-org=n
-temp=n+1
-while n>0:
- for i in range(2,int(temp**0.5)+1):
-   if temp%i==0:
-      break;
- else:
-   k=temp
-   break
- temp=temp+1
-print(abs(k-org))
+for i in range(1,10000):
+    if prime(i+a+b)==1:
+        print(i)
+        break

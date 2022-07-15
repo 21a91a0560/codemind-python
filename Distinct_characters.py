@@ -1,14 +1,14 @@
-a=input()
-arr=[]
-for i in a:
-    if i.isspace():
+s=input()
+s=s.lower()
+a=[]
+b=[]
+for i in range(len(s)):
+    if s[i]==' ':
         continue
-    else:
-        if i.lower() not in arr:
-            arr.append(i.lower())
-for i in range(len(arr)):
-    for j in range(len(arr)-1):
-        if arr[j]>arr[j+1]:
-            arr[j],arr[j+1]=arr[j+1],arr[j]
-for i in arr:
-    print(i,end="")
+    if s[i] not in a:
+        a.append(s[i])
+for i in a:
+    b.append(ord(i))
+b=sorted(b)
+for i in b:
+    print(chr(i),end='')

@@ -1,19 +1,26 @@
-n=int(input())
-m=n*n
+a=int(input())
 c=0
-org=n
-while n>0:
-    d=n%10
-    c=c+1
-    n=n//10
 r=0
-temp=m
-while m>0:
- rem=m%10
- r=r*10+rem
- m=m//10
-p=temp%(10**c)
-if p==org:
-    print('Automorphic Number')
+j=0
+p=a
+k=a**2
+t=a
+rev=0
+while a:
+    d=a%10
+    c+=1
+    a=a//10
+while k:
+    d=k%10
+    j+=1
+    if(j<=c):
+     rev=rev*10+d
+    k=k//10
+while rev:
+    d=rev%10
+    r=r*10+d
+    rev=rev//10
+if r==p:
+    print("Automorphic Number")
 else:
-    print('Not an Automorphic Number')
+    print("Not an Automorphic Number")

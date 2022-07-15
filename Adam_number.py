@@ -1,19 +1,17 @@
-n=int(input())
-m=n*n
-temp=n
+a=int(input())
+s=a**2
 r=0
-while n>0:
- d=n%10
- r=r*10+d
- n=n//10
-k=r*r
-org=k
+while a:
+    d=a%10
+    r=r*10+d
+    a=a//10
+s1=r**2
 r1=0
-while k>0:
- rem=k%10
- r1=r1*10+rem
- k=k//10
-if r1==m:
-   print('True')
+while s1:
+    d=s1%10
+    r1=r1*10+d
+    s1=s1//10
+if s==r1:
+    print("True")
 else:
-  print('False')
+    print("False")

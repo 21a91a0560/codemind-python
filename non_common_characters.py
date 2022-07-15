@@ -1,26 +1,21 @@
-a=input()
-b=input()
-a1=""
-b1=""
-for i in a:
-    if i.isspace():
+s=input()
+s=s.lower()
+s1=input()
+s1=s1.lower()
+a=[]
+b=[]
+for i in range(len(s)):
+    if s[i]==' ':
         continue
-    else:
-        a1+=i.lower()
-for i in b:
-    if i.isspace():
+    if s[i] not in s1 and s[i] not in a:
+        a.append(s[i])
+for i in range(len(s1)):
+    if s1[i]==' ':
         continue
-    else:
-        b1+=i.lower()
-arr=[]
-for i in a1:
-    if i not in b1:
-        if i not in arr:
-            arr.append(i)
-for i in b1:
-    if i not in a1:
-        if i not in arr:
-            arr.append(i)
-arr.sort()
-for i in arr:
-    print(i,end="")
+    if s1[i] not in s and s1[i] not in a:
+        a.append(s1[i])        
+for i in range(len(a)):
+    b.append(ord(a[i]))
+b=sorted(b)
+for i in range(len(b)):
+    print(chr(b[i]),end='')

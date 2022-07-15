@@ -19,4 +19,3 @@ for p in range(a):
      print(i)
  else:
      print(m)
-     

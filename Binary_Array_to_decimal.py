@@ -7,5 +7,3 @@ for i in a:
     s=s+(i*(2**k))
     k+=1
 print(s)    
-
-    

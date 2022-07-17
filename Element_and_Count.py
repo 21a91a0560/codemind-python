@@ -6,4 +6,3 @@ for i in a:
      s.append(i)
      print(i,a.count(i),end=' ')
     
-

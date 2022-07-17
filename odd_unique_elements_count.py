@@ -6,3 +6,4 @@ for i in s:
    if i%2!=0:
        c+=1
 print(c)       
+    

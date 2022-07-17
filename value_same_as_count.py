@@ -7,4 +7,3 @@ for i in range(n):
         s.append(a[i])
         f+=1
 print(f)        
-

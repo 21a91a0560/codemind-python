@@ -10,3 +10,4 @@ for i in range(n):
 k=[]
 k=o+e
 print(*k)
+        

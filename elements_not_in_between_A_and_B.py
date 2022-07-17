@@ -8,4 +8,3 @@ for i in range(n):
         k=1
 if k==0:
     print(-1)
-    
